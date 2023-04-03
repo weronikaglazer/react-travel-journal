@@ -1,8 +1,10 @@
-body { margin: 0 }
+body { 
+  margin: 0;
+  width: 100vw
+}
 
 #root {
-  width: auto;
-  box-sizing: border-box;
+  width: 100%;
   text-align: center;
 }
 
@@ -100,7 +102,36 @@ footer > a > img {
   height: 40px;
 }
 
+@media (max-width: 550px) {
+  #root {
+    width: 100vw;
+  }
 
+  header {
+    display: block;
+    width: 70%;
+    margin: 3em auto;
+  }
+
+  .header--title {
+    text-align: center;
+    padding: 0;
+    font-size: 3.2rem;
+    width: 100%;
+  }
+  .content-container {
+    margin: 3em 0;
+    width: 100vw;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 0;
+    padding: 1em;
+  }
+}
 
 
 
